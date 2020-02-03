@@ -1,0 +1,6 @@
+heading,Question 1
+choice,Wild,b
+choice,Happy,a
+choice,Unhappy,d
+choice,Okay,c
+image,path

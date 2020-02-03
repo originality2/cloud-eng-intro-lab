@@ -1,0 +1,62 @@
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+    font-weight: 700;
+}
+
+.navbar ul {
+    top: 0;
+    list-style-type: none;
+    margin: 0;
+    padding: 10px;
+    overflow: hidden;
+    width: 538px;
+    float: left;
+    font-weight: 700;
+  }
+
+.navbar{
+    background-color: #ffffff;
+    box-shadow: 0 1px 0 hsla(0,3%,67%,.1),0 2px 1px hsla(0,1%,71%,.1);
+    height: 60px;
+}
+
+.nav-icon {
+    float: left;
+    font-size: 20px;
+    color: #212121;
+    padding:  23px;
+}
+  
+li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: #222;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    color: #0f65ef;
+  }
+
+  .buzzfeed {
+    font-size: 30px;
+    color: #e32e32 !important;
+    text-decoration: none;
+    float: left;
+    padding: 14px;
+    font-weight: 700;
+}
+
+.row {
+    padding: 15px;
+    width: 100%;
+}

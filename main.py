@@ -69,8 +69,8 @@ def play(direction):
         return render_template('end.py', heading=heading, 
         image_path=image_path, result=result)
 
+question = 1
+total_qs = 4
+results = reset_results()
 if __name__ == '__main__':
-    question = 1
-    total_qs = 4
-    results = reset_results()
     app.run()

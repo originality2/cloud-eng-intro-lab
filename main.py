@@ -73,4 +73,4 @@ question = 1
 total_qs = 4
 results = reset_results()
 if __name__ == '__main__':
-    app.run()
+    app.run(debug=True, host='0.0.0.0')

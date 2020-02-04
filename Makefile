@@ -27,8 +27,7 @@ build: ## Build the container
 run: ## Run container on port configured in `config.env`
 	docker run -d -p=$(PORT):$(PORT) --name="$(APP_NAME)" $(APP_NAME)
 
-start: # alias 
-	build run
+start: build run
 
 destroy: ## Stop and remove a running container
 	docker stop $(APP_NAME); docker rm $(APP_NAME)

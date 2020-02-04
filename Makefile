@@ -7,18 +7,28 @@ SHELL := /bin/bash -o pipefail
 export VERSION ?= 1.0
 export LAST_COMMIT_SHA ?= $(shell git rev-parse --short HEAD)
 
-DOCKER_CONTAINER_LIST := $(shell docker ps -a -q)
+# import config.
+# You can change the default config with `make cnf="config_special.env" build`
+cnf ?= config.env
+include $(cnf)
+export $(shell sed 's/=.*//' $(cnf))
 
-##@ Entry Points
-.PHONY: build
-build: ## Build and test docker image artifact
-	docker build -t lab:latest .
-	docker run -d -p 5000:5000 lab
+# import deploy config
+# You can change the default deploy config with `make cnf="deploy_special.env" release`
+dpl ?= deploy.env
+include $(dpl)
+export $(shell sed 's/=.*//' $(dpl))
 
-.PHONY: destroy
-destroy: ## Destroy containers made
-	if [ -n "$(DOCKER_CONTAINER_LIST)" ]; \
-	then \
-		docker stop "$(DOCKER_CONTAINER_LIST)"; \
-		docker rm "$(DOCKER_CONTAINER_LIST)"; \
-	fi
+# DOCKER TASKS
+# Build the container
+build: ## Build the container
+	docker build -t $(APP_NAME) .
+
+run: ## Run container on port configured in `config.env`
+	docker run -d -p=$(PORT):$(PORT) --name="$(APP_NAME)" $(APP_NAME)
+
+start: # alias 
+	build run
+
+destroy: ## Stop and remove a running container
+	docker stop $(APP_NAME); docker rm $(APP_NAME)

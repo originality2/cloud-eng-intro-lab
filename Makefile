@@ -4,7 +4,7 @@ SHELL := /bin/bash -o pipefail
 .DEFAULT_GOAL := start
 
 APP_NAME ?= lab-app
-LINE_COUNT := $(shell docker ps | wc -l)
+LINE_COUNT := $(shell docker ps | grep ${APP_NAME} | wc -l)
 
 # DOCKER TASKS
 # Build the container
@@ -21,7 +21,7 @@ start: destroy build run
 
 destroy: ## Stop and remove a running container
 	echo -e 'Cleaning docker containers...'
-	if [ $(LINE_COUNT) == 1 ] ; then \
+	if [ $(LINE_COUNT) == 0 ] ; then \
          echo -e 'No containers to clean.';\
     else \
 		docker rm -f $(APP_NAME) 2>&1 >/dev/null;\

@@ -1,4 +1,4 @@
-# Introduction to Clound Computing: Windows Setup
+# Introduction to Cloud Computing: Windows Setup
 
 There is some setup involved in having the flask app run locally and Windows has a lot of incompatibility issues inc:
 - Docker Desktop is not available unless you upgrade to Pro or Enterprise

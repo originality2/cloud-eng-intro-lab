@@ -51,6 +51,7 @@ cd cloud-eng-intro-lab
 
 ### Step Two: Running the app locally
 *If you are a Windows user, you will not be running the app locally. Navigate [here] for your instructions*
+
 The application is set to run in a Docker container upon initialisation. We have used a Makefile to define a set of directives to run our docker container. This workshop does not cover [containerisation] or [Makefiles], but I encourage you to read more on it.
 
 Run the app

@@ -1,4 +1,4 @@
-# Introduction to Clound Computing: IaaS and PaaS
+# Introduction to Cloud Computing: IaaS and PaaS
 
 In this workshop you will deploy a Flask App to the App Engine.
 
@@ -50,7 +50,7 @@ cd cloud-eng-intro-lab
 ```
 
 ### Step Two: Running the app locally
-*If you are a Windows user, you will not be running the app locally. Navigate here for your instructions*
+*If you are a Windows user, you will not be running the app locally. Navigate [here] for your instructions*
 The application is set to run in a Docker container upon initialisation. We have used a Makefile to define a set of directives to run our docker container. This workshop does not cover [containerisation] or [Makefiles], but I encourage you to read more on it.
 
 Run the app
@@ -113,3 +113,4 @@ gcloud app deploy
 
 [containerisation]:<https://www.docker.com/resources/what-container>
 [Makefiles]:<https://www.gnu.org/software/make/manual/html_node/Introduction.html>
+[here]:<https://github.com/originality2/cloud-eng-intro-lab/blob/master/Windows-README.md>

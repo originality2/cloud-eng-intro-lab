@@ -1,6 +1,6 @@
-heading,Question 1
-choice,Wild,b
-choice,Happy,a
-choice,Unhappy,d
-choice,Okay,c
-image,path
+heading,Which quote resonates best with you?
+choice,"Why did I get double stuffed?",Jermaine
+choice,"She's got two jobs - she's a pastry chef and a sniper.",Brett
+choice,"The difference between cool bands and you... is hair.",Murray
+choice,"I have some cookies for you in my fanny pack!",Mel
+image,./static/images/gif3.gif

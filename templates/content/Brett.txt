@@ -1,0 +1,3 @@
+heading,You are Brett! (Brit)
+result,Congratulations! You are a member of the 4th most popular New Zealand folk band. You are a sensitive soul and incredible rap artist. Plus you are the ladies' man of the band.
+image,./static/images/brett.gif

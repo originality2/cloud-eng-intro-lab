@@ -1,2 +1,0 @@
-heading,You are Jermaine!
-result,Some stuff about Jermaine.

@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>Not Buzzfeed</title>
+    <link rel="icon" 
+      type="image/png" 
+      href="{{ url_for('static', filename='images/buzzfeedarrow.png') }}">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/all.css') }}">
@@ -10,13 +13,13 @@
   <body>
     <div class="navbar">
       <i class="nav-icon fas fa-bars"></i>
-      <a class="buzzfeed" href="#home">Not Buzzfeed</a>
+      <a class="buzzfeed" href="/">Not Buzzfeed</a>
       <ul>
-        <li><a href="#news">News</a></li>
-        <li><a href="#contact">Quizzes</a></li>
-        <li><a href="#about">Shopping</a></li>
-        <li><a href="#about">TV & Movies</a></li>
-        <li><a href="#about">Videos</a></li>
+        <li><a>News</a></li>
+        <li><a>Quizzes</a></li>
+        <li><a>Shopping</a></li>
+        <li><a>TV & Movies</a></li>
+        <li><a>Videos</a></li>
       </ul>
       <i class="nav-icon fas fa-search"></i>
     </div>
@@ -30,8 +33,11 @@
     <br><br><br>
     <h1>Which Flight of the Conchords member are you?</h1>
     <p>See if you can handle the (inner city) pressure</p>
-    <p>Posted on 25th of November,  2019</p>
-    <a href="start">Start</a>
+    <p style="font-size:12px;">Posted on 25th of November,  2019</p>
+    <div>
+      <img style="width:1050px" src="./static/images/startgif.gif">
+    </div>
+    <a href="start"><div class="button">Start</div></a>
   </div>
   </body>
 </html>

@@ -1,6 +1,6 @@
-heading,Question 1
-choice,Wild,b
-choice,Happy,a
-choice,Unhappy,d
-choice,Okay,c
-image,path
+heading,Who is your favourite Flight of the Conchords member?
+choice,Jermaine,Jermaine
+choice,Brett.. No Jermaine.. No Brett.. No J,Mel
+choice,I prefer Crazy Dogs,Murray
+choice,Brett,Brett
+image,./static/images/gif2.gif

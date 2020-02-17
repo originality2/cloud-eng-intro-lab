@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>Not Buzzfeed Quiz</title>
+    <link rel="icon" 
+      type="image/png" 
+      href="{{ url_for('static', filename='images/buzzfeedarrow.png') }}">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/all.css') }}">
@@ -10,13 +13,13 @@
   <body>
     <div class="navbar">
       <i class="nav-icon fas fa-bars"></i>
-      <a class="buzzfeed" href="#home">Not Buzzfeed</a>
+      <a class="buzzfeed" href="/">Not Buzzfeed</a>
       <ul>
-        <li><a href="#news">News</a></li>
-        <li><a href="#contact">Quizzes</a></li>
-        <li><a href="#about">Shopping</a></li>
-        <li><a href="#about">TV & Movies</a></li>
-        <li><a href="#about">Videos</a></li>
+        <li><a>News</a></li>
+        <li><a>Quizzes</a></li>
+        <li><a>Shopping</a></li>
+        <li><a>TV & Movies</a></li>
+        <li><a>Videos</a></li>
       </ul>
       <i class="nav-icon fas fa-search"></i>
     </div>
@@ -29,7 +32,10 @@
       </div>
     <br><br><br>
     <h1>{{ heading }}</h1>
-    <p>{{ result }}</p>
-    <a href="/">Start Again</a>
+    <div>
+      <img style="width:1050px" src="{{image_path}}">
+    </div>
+    <div style="width:1050px"><p>{{ result }}</p></div>
+    <a href="/"><div class="button">Start Again</div></a>
   </body>
 </html>

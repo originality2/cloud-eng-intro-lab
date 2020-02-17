@@ -1,6 +1,6 @@
-heading,Question 1
-choice,Wild,b
-choice,Happy,a
-choice,Unhappy,d
-choice,Okay,c
-image,path
+heading,One more quote!
+choice,"Well that bird doesn't have any wings. It's only got one leg.",Brett
+choice,"When you're in a situation where you are being mugged you shouldn't leave your friend to die!",Jermaine
+choice,"Do you think of us as friends? We're not. We're colleagues.",Murray
+choice,"Have I shown you my picture of Jermaine's lips? I have it here in my wallet.",Mel
+image,./static/images/gif4.gif

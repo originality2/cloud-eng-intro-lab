@@ -1,6 +1,6 @@
-heading,Question 1
-choice,Wild,b
-choice,Happy,a
-choice,Unhappy,d
-choice,Okay,c
-image,path
+heading,What is your preference for your own facial hair?
+choice,Classic Stubble,Brett
+choice,A Sometimes-Glued-On Beard,Jermaine
+choice,Goatee,Murray
+choice,None,Mel
+image,./static/images/gif1.gif

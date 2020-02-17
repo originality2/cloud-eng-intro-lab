@@ -1,0 +1,3 @@
+heading,You are Murray!
+result,Murray! You are the least organised of the group - though make efforts to make sure everyone is present at your meetings. You have an eye for talent and half of the time it pays off! 
+image,./static/images/murray.gif

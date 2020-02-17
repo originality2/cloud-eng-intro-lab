@@ -7,7 +7,7 @@ app = Flask(__name__)
 
 
 def reset_results():
-    return {"a":0, "b":0, "c":0, "d":0}
+    return {"Jermaine":0, "Brett":0, "Mel":0, "Murray":0}
 
 @app.route('/favicon.ico') 
 def favicon(): 
@@ -22,6 +22,7 @@ def play(direction):
     global question
     global total_qs
     global results
+    global mapping
     if direction != "start":
         question += 1
         results[direction] += 1
@@ -57,7 +58,6 @@ def play(direction):
         for line in lines:
             line = line.strip("\n")
             line = line.split(",")
-            print(line)
             if line[0] == "heading":
                 heading = line[1]
             elif line[0] == "result":

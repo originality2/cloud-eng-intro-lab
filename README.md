@@ -2,6 +2,8 @@
 
 In this workshop you will deploy a Flask App to the App Engine.
 
+Slides: https://docs.google.com/presentation/d/1Q_oNTZWsFdykGo9Ih5yKCruVm8xpORJ4AAp_VWe__sc/edit?usp=sharing
+
 # Pre-requisites 
 ### Git is installed
 This allows you to run git commands in the terminal

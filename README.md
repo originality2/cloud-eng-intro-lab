@@ -9,13 +9,6 @@ Slides: https://docs.google.com/presentation/d/1Q_oNTZWsFdykGo9Ih5yKCruVm8xpORJ4
 This allows you to run git commands in the terminal
 - Mac: https://www.atlassian.com/git/tutorials/install-git#mac-os-x
 - Windows: https://www.atlassian.com/git/tutorials/install-git#windows
-
-### Docker Desktop is Installed (Mac Only)
-> Required to run flask app locally.
-> Docker now requires that you have a login, so you will have to sign up.
-- Mac: https://hub.docker.com/?overlay=onboarding&step=download
-- Windows: https://docs.docker.com/toolbox/toolbox_install_windows/
-  > Note: Docker Desktop is not available to Windows 10 Home, but you can get Docker Toolbox which is an older version. *Windows Users will be doing this lab a little differently, and so Docker install is NOT required for this workshop, though you will probably need it eventually*
   
 ### Gcloud SDK is installed
 > This allows you to run gcloud commands in the terminal
@@ -24,13 +17,11 @@ This allows you to run git commands in the terminal
 - Mac: https://cloud.google.com/sdk/docs/downloads-interactive#mac
 - Windows: https://cloud.google.com/sdk/docs/downloads-interactive#windows
 
-### VS Code is installed (or an editor of your choice)
-- Mac: https://code.visualstudio.com/download
-- Windows: https://code.visualstudio.com/download
-
-Probably best to enable the Command Line Interface for VS Code also: 
-- Mac: https://code.visualstudio.com/docs/setup/mac
-- Windows: CLI enabled is already default
+### Python 2.7 is installed
+> We need this to run one file in App Engine for deployment
+> Yes, I know this is deprecated. I will upgrade to v3 soon!
+- Mac: https://www.python.org/downloads/release/python-2717/
+- Windows: https://www.python.org/downloads/release/python-2717/
 
 # Let's Get Started!
 ### Step One: Cloning the repo
@@ -51,17 +42,10 @@ And navigate to the directory
 cd cloud-eng-intro-lab
 ```
 
-### Step Two: Running the app locally
-*If you are a Windows user, you will not be running the app locally. Navigate [here] for your instructions*
+### Step Two: Deploy to Compute Engine
+This is optional - you can follow along during the workshop or read instructions for later. It's extensive set up and I wouldn't recommend it for this kind of application (hence us using App Engine later)! 
 
-The application is set to run in a Docker container upon initialisation. We have used a Makefile to define a set of directives to run our docker container. This workshop does not cover [containerisation] or [Makefiles], but I encourage you to read more on it.
-
-Run the app
-```sh
-make
-```
-
-On successful build and run, follow the hyperlink provided in the terminal. 
+https://github.com/originality2/cloud-eng-intro-lab/blob/master/IaaS-README.md
 
 ### Step Three: Editing the app
 Feel free to customise the app however you see fit prior to deployment.
@@ -114,6 +98,4 @@ gcloud app deploy
 - Follow the link and see your app. You can check this link on another device - it's deployed up into the web!
 
 
-[containerisation]:<https://www.docker.com/resources/what-container>
-[Makefiles]:<https://www.gnu.org/software/make/manual/html_node/Introduction.html>
 [here]:<https://github.com/originality2/cloud-eng-intro-lab/blob/master/Windows-README.md>

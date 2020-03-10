@@ -1,13 +1,6 @@
-# Introduction to Cloud Computing: Windows Setup
+# Introduction to Cloud Computing: IaaS Lab
 
-There is some setup involved in having the flask app run locally and Windows has a lot of incompatibility issues inc:
-- Docker Desktop is not available unless you upgrade to Pro or Enterprise
-- Make is not available by default
-- Bash is not default
-- The solution (WSL, I seriously recommend installing it) currently does not allow install of Docker.
-
-Luckily, there are solutions to this. We are going to set up a Virtual Machine on GCP called a compute instance. 
-This is not the best solution, but will allow you to edit your Flask app before we get to App Engine later. 
+This is an optional step, but here are the instructions to deploy the app to Compute Engine (an Infrastructure as a Service product)
 
 ### Step One: Making a VM
 - In the [GCP Console], navigate to Compute Engine -> Vm Instances in the Navigation Menu.

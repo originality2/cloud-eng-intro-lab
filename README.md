@@ -72,6 +72,8 @@ For App Engine, we don't need any of the Docker files or Makefiles we have alrea
   runtime: python27
   api_version: 1
   threadsafe: true
+  # must be unique
+  service: unique-app-name
 
   handlers:
   - url: /static
